@@ -1,5 +1,7 @@
-const write     = x => document.getElementById('div').innerText += x + '\n';
+// Set up
+const write     = x => document.getElementById('div1').innerText += x;
 let arguments = ['▄ ▄▄▄ ▄▄▄   ▄ ▄▄▄   ▄ ▄▄▄ ▄ ▄   ▄▄▄   ▄▄▄ ▄▄▄ ▄ ▄          ▄▄▄ ▄ ▄▄▄ ▄▄▄   ▄▄▄ ▄ ▄ ▄   ▄ ▄▄▄ ▄▄▄ ▄▄▄   ▄ ▄▄▄   ▄▄▄   ▄ ▄▄▄ ▄▄▄ ▄   ▄ ▄▄▄ ▄▄▄   ▄▄▄ ▄ ▄ ▄▄▄   ▄ ▄ ▄▄▄ ▄   ▄ ▄ ▄ ▄   ▄▄▄ ▄   ▄▄▄ ▄▄▄ ▄   ▄ ▄▄▄ ▄   ▄▄▄ ▄ ▄▄▄   ▄▄▄ ▄▄▄   ▄   ▄▄▄ ▄ ▄▄▄ ▄   ▄ ▄ ▄▄▄   ▄▄▄ ▄▄▄ ▄ ▄   ▄▄▄ ▄' +
 ' ▄   ▄▄▄ ▄▄▄ ▄▄▄   ▄▄▄ ▄▄▄ ▄ ▄▄▄   ▄ ▄▄▄ ▄ ▄   ▄ ▄ ▄   ▄ ▄   ▄ ▄ ▄ ▄▄▄          ▄ ▄ ▄ ▄▄▄   ▄   ▄▄▄ ▄ ▄ ▄▄▄          ▄ ▄ ▄▄▄ ▄   ▄▄▄ ▄▄▄ ▄▄▄   ▄ ▄▄▄ ▄          ▄▄▄ ▄ ▄ ▄   ▄ ▄ ▄▄▄   ▄▄▄ ▄ ▄          ▄▄▄ ▄   ▄▄▄ ▄ ▄▄▄ ▄▄▄   ▄▄▄ ▄▄▄   ▄ ▄▄▄ ▄▄▄ ▄   ▄ ▄ ▄ ▄          ▄▄▄ ▄▄▄ ▄ ▄▄▄   ▄ ▄ ▄▄▄   ▄ ▄   ▄▄▄ ▄ ▄▄▄ ▄   ▄▄▄ ▄ ▄▄▄          ▄ ▄▄▄ ▄▄▄ ▄▄▄   ▄ ▄   ▄▄▄ ▄▄▄ ▄   ▄ ▄ ▄          ▄ ▄ ▄▄▄ ▄▄▄ ▄▄▄   ▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄   ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄   ▄ ▄ ▄ ▄ ▄   ▄ ▄ ▄ ▄ ▄▄▄   ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄   ▄▄▄ ▄ ▄ ▄ ▄   ▄ ▄ ▄ ▄▄▄ ▄▄▄   ▄▄▄ ▄▄▄ ▄ ▄ ▄   ▄▄▄ ▄▄▄ ▄▄▄ ▄ ▄']
 
-arguments[0].split(/ {10}/).map(w=>write(w.split`   `.map(l=>'ETIANMSURWDKGOHVF L PJBXCYZQ  54 3   2       16       7   8 90'[parseInt(1+l.split` `.map(b=>b=='▄'?0:1).join``,2)-2]).join``+' '))
+// Code
+arguments[0].split(/ {10}/).map(w=>write(w.split`   `.map(l=>'ETIANMSURWDKGOHVF L PJBXCYZQ  54 3   2       16       7   8 90'[parseInt(1+l.split` `.map(b=>b=='▄'?0:1).join``,2)-2]).join``+` `))
